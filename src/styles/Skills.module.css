@@ -1,0 +1,146 @@
+.skills {
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+    padding: 10px;
+
+}
+
+/* ================= HEADING ================= */
+
+.skills h3 {
+  color: var(--light);
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* ================= GRID ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* ================= CATEGORY CARD ================= */
+
+.skillCategory {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+}
+
+.skillCategory:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.12);
+  box-shadow: 0 20px 40px -15px var(--primary);
+}
+
+.skillCategory h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1.6rem;
+  color: var(--primary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.6rem;
+}
+
+/* ================= SKILLS ================= */
+
+.skillItem {
+  margin-bottom: 1.3rem;
+}
+
+.skillInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: var(--light);
+}
+
+/* ================= PROGRESS BAR ================= */
+
+.progressBar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+
+/* ================= TOOLS ================= */
+
+.toolsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.toolTag {
+  padding: 0.45rem 1.1rem;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--light);
+  transition: all 0.3s ease;
+}
+
+.toolTag:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 0px;
+    text-align: center;
+  }
+
+  .skills h3 {
+    font-size: 2rem;
+  }
+
+  .skillInfo {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .skills h3 {
+    font-size: 1.8rem;
+  }
+
+  .skillCategory {
+    padding: 1.6rem;
+  }
+
+  .progressBar {
+    height: 7px;
+  }
+}

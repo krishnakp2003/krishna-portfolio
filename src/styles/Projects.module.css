@@ -1,0 +1,208 @@
+.projects {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  overflow-x: hidden; /* 🔥 important */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= HEADING ================= */
+
+.projects h3 {
+  color: var(--light);
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* ================= PROJECT GRID ================= */
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 🔥 FIX */
+  gap: 2rem;
+}
+
+/* ================= PROJECT CARD ================= */
+
+.projectCard {
+  width: 100%;
+  box-sizing: border-box; /* 🔥 FIX */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.8rem;
+  overflow: hidden; /* 🔥 FIX */
+  transition: all 0.35s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px -15px var(--primary);
+}
+
+/* ================= HEADER ================= */
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap; /* 🔥 FIX */
+  margin-bottom: 1rem;
+}
+
+.projectHeader h4 {
+  font-size: 1.35rem;
+  color: var(--light);
+}
+
+.role {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 50px;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.description {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ================= TECH STACK ================= */
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech {
+  padding: 0.25rem 0.85rem;
+  background: var(--border);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: var(--light);
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+  margin-bottom: 1.5rem;
+}
+
+.features h5 {
+  color: var(--secondary);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 0.4rem 0;
+  color: var(--gray);
+  font-size: 0.9rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.features li::before {
+  content: "✓";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+/* ================= META ================= */
+
+.projectMeta {
+  margin-bottom: 1.5rem;
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+/* ================= LINKS ================= */
+
+.projectLinks {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 FIX */
+  gap: 1rem;
+}
+
+.projectLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 🔥 FIX */
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--light);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+.projectLinks a:hover {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.linkIcon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+  /* .projects {
+    padding: 70px 16px; 🔥 FIX 
+  } */
+
+  .projects h3 {
+    font-size: 2rem;
+  }
+
+  .projectCard {
+    padding: 1.5rem;
+  }
+
+  .projectHeader h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .projects h3 {
+    font-size: 1.8rem;
+  }
+
+  .projectLinks a {
+    width: 100%; /* 🔥 FIX */
+  }
+}
+
+/* ================= SAFETY ================= */
+
+.projects * {
+  max-width: 100%; /* 🔥 FINAL SAFETY */
+}
