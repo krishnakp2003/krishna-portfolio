@@ -70,6 +70,14 @@
   white-space: nowrap;
 }
 
+/* ======================= Duration ================= */
+.duration{
+  font-size: 0.75rem;
+  padding: 0.35rem 0.9rem;
+  background: rgba(7, 10, 158, 0.2);
+  border-radius: 50px;
+  color: #b8b9f0;
+}
 /* ================= DESCRIPTION ================= */
 
 .description {

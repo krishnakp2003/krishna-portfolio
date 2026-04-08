@@ -12,7 +12,7 @@ export default function Projects() {
       ],
       github: "https://github.com/krishna/agrimachhub",
       live: "https://agrimachhub.com",
-      duration: "3 months",
+      duration: "Under Development",
       role: "Lead Developer"
     },
    {

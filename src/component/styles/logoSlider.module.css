@@ -1,0 +1,108 @@
+/* ================= SLIDER ================= */
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ================= TRACK ================= */
+
+.slideTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite; /* 🔥 speed slow */
+}
+
+/* ================= SLIDE ================= */
+
+.slide {
+  flex: 0 0 auto;
+  width: 130px; /* 🔥 width reduced */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ================= IMAGE ================= */
+
+.slide img {
+  width: 55px; /* reduced */
+  height: 55px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+.slide img:hover {
+  transform: scale(1.2);
+}
+
+/* ================= TEXT ================= */
+
+.logoName {
+  font-size: 1.4rem;
+  color: #d9dcb2;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.slide:hover .logoName {
+  color: var(--primary);
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= HOVER PAUSE ================= */
+
+.slider:hover .slideTrack {
+  animation-play-state: paused;
+}
+
+/* ================= GRADIENT FADE ================= */
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .slide {
+    width: 100px;
+  }
+
+  .slide img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logoName {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .slide {
+    width: 80px;
+  }
+
+  .slide img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logoName {
+    font-size: 1.2rem;
+  }
+}

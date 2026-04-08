@@ -1,10 +1,11 @@
 import styles from "../styles/Hero.module.css";
+import LogoSlider from "./logoSlider";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <span className={styles.greeting}>👋 Hello, I'm</span>
+        {/* <span className={styles.greeting}>👋 Hello, I'm</span> */}
         <h1>Krishna Kumar Prajapati</h1>
         <h2>
           <span className={styles.typing}>Full Stack Java Developer</span>
@@ -14,12 +15,13 @@ export default function Hero() {
           with clean architecture and long-term vision. 
           Specialized in Spring Boot ecosystem and React.js.
         </p>
-        
+       
         <div className={styles.stats}>
           <div className={styles.statItem}>
-            <span className={styles.statNumber}>1.5+</span>
-            <span className={styles.statLabel}>Years Experience</span>
+            <span className={styles.statNumber}>1.5+ <span className={styles.statLabel}>Years Experience</span></span>
+            
           </div>
+          
           {/* <div className={styles.statItem}>
             <span className={styles.statNumber}>10+</span>
             <span className={styles.statLabel}>Projects Completed</span>
@@ -29,7 +31,7 @@ export default function Hero() {
             <span className={styles.statLabel}>Happy Clients</span>
           </div> */}
         </div>
-
+ <LogoSlider/>
         <div className={styles.buttons}>
           <a href="#projects" className={styles.primary}>View My Work →</a>
           <a href="https://1drv.ms/b/c/7b0377ccf8e0591d/IQBPOJBe5RddQak8dtQ5_0pwAXFfAdRCUQo41P5m3zj8DmY?e=6fEXRp" className={styles.secondary}>View Resume</a>
