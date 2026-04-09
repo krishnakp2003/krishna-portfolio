@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/LogoSlider.module.css";
+import styles from "../styles/logoSlider.module.css";
 
 const logos = [
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", name: "Java" },

@@ -70,7 +70,7 @@
 }
 
 .statLabel {
-  font-size: 0.85rem;
+  font-size: 1.85rem;
   color: var(--gray);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -193,7 +193,9 @@
     justify-content: center;
     gap: 2rem;
   }
-
+.statLabel {
+  font-size: 1.2rem;
+}
   .buttons {
     justify-content: center;
   }
