@@ -125,14 +125,14 @@
 .socialLinks {
   display: flex;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   justify-content: center;
 
 }
 
 .socialIcon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   color: var(--gray);
   transition: all 0.3s ease;
 }

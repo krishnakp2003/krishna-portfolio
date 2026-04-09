@@ -1,6 +1,6 @@
 .projects {
   padding: 10px;
-  background: rgba(255, 255, 255, 0.02);
+  /* background: rgba(255, 255, 255, 0.02); */
   overflow-x: hidden; /* 🔥 important */
 }
 
@@ -14,8 +14,8 @@
 .projects h3 {
   color: var(--light);
   font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 /* ================= PROJECT GRID ================= */
@@ -31,7 +31,7 @@
 .projectCard {
   width: 100%;
   box-sizing: border-box; /* 🔥 FIX */
-  background: rgba(255, 255, 255, 0.03);
+  /* background: rgba(255, 255, 255, 0.03); */
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 1.8rem;

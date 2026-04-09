@@ -53,9 +53,8 @@ section::before {
 h3 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   position: relative;
-  display: inline-block;
 }
 
 h3::after {
